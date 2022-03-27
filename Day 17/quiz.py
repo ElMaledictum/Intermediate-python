@@ -1,11 +1,13 @@
 from os import system
 from random import choice
 from data import question_data
+
 system("cls")
+
 
 class Question:
     def __init__(self):
-        
+
         self.text = ""
         self.answer = ""
         self.q_num = 0
@@ -44,17 +46,18 @@ def main():
 
     while questions.still_has_questions():
         if q1.next_question(question_data) == q1.answer:
-            print ("Correct!")
+            print("Correct!")
             player.add_score()
-        
-        else:
-            print ("Wrong!")
 
-        print (f"Total score is: {player.score}/{q1.q_num}\n")
-        
+        else:
+            print("Wrong!")
+
+        print(f"Total score is: {player.score}/{q1.q_num}\n")
+
     else:
-        print ("No more questions.")
-    
-    print (f"Total score is: {player.score}/{q1.q_num}")
+        print("No more questions.")
+
+    print(f"Total score is: {player.score}/{q1.q_num}")
+
 
 main()
