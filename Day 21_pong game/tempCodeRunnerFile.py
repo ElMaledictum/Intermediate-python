@@ -1,0 +1,1 @@
+#left paddle score+= 1
