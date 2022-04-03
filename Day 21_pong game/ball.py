@@ -12,7 +12,9 @@ class Ball(Turtle):
         self.color("white")
         self.penup()
         self.speed(3)
+        self.frame_spd = 0.09
         self.random_heading()
+
 
     def random_heading(self):
         self.setheading(random.choice(ANGLES))
@@ -27,9 +29,11 @@ class Ball(Turtle):
     def reflect(self, heading_before):
         new_heading = 180 - heading_before
         self.setheading(new_heading)
+        self.frame_spd *= 0.7
 
     def reset_pos(self):
         time.sleep(0.1)
         self.goto(0, 0)
         time.sleep(0.1)
+        self.frame_spd = 0.1
         self.reflect(self.heading())

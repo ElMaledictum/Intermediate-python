@@ -34,7 +34,7 @@ def collided(paddle):
     
 is_gaming = True
 while is_gaming:
-    time.sleep(0.01)
+    time.sleep(ball.frame_spd)
 
     screen.update()
     ball.move()
