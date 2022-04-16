@@ -44,14 +44,17 @@ while is_gaming:
     ycoor = snake.snakehead.ycor()
     if xcoor > 275 or xcoor < -275 or ycoor > 280 or ycoor < -278:
         # print ("Collided with wall!")
-        scoreboard.game_over()   
-        break 
+        scoreboard.game_over()  
+        snake.reset() 
+        # break 
 
     #detect colision with the body of the snake
     for each_part in snake.body[1:]:
         if snake.snakehead.distance(each_part) < 4:
             scoreboard.game_over()
-            is_gaming = False
+            snake.reset() 
+
+            # is_gaming = False
 
 scr.exitonclick()
 

@@ -1,5 +1,4 @@
 from turtle import Turtle, Screen
-
 #turtle_1 is a new object made from Turle() class
 turtle_1 = Turtle()
 # print (turtle_1)
