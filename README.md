@@ -1,2 +1,2 @@
-# Intermediate python
- starting with OOp
+# My intermediate Python projects
+Starting to learn OOP...
