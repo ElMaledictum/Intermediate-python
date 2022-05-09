@@ -1,7 +1,11 @@
 {
-    "python.formatting.provider": "black",
-    "terminal.integrated.fontFamily": "Source Code Pro",
+    "python.formatting.provider": "autopep8",
+    "terminal.integrated.fontFamily": "JetBrains Mono",
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
+    "oneDarkPro.bold": false,
+    "editor.fontWeight": "bold",
+    "oneDarkPro.vivid": true
+
     
 }
